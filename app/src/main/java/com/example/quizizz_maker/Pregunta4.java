@@ -58,7 +58,7 @@ public class Pregunta4 extends AppCompatActivity {
 
 
             cuestionarios = new BaseDeDatos(Pregunta4.this, "",null,1);
-            cuestionarios.guardarCuestionario( Nombre, Categoria,  pregunta1,respCorrect1,respIncorrecta1_1,respIncorrecta1_2,respIncorrecta1_3,pregunta2,respCorrect2,respIncorrecta2_1,respIncorrecta2_2,respIncorrecta2_3,pregunta3,respCorrect3,respIncorrecta3_1,respIncorrecta3_2,respIncorrecta3_3,Preg,RespCorr,RespInc1,RespInc2,RespInc3,accion,Id);
+            cuestionarios.guardarCuestionario( Nombre, Categoria,  pregunta1,respCorrect1,respIncorrecta1_1,respIncorrecta1_2,respIncorrecta1_3,pregunta2,respCorrect2,respIncorrecta2_1,respIncorrecta2_2,respIncorrecta2_3,accion,Id);
             Toast.makeText(Pregunta4.this, "Listo, Cuestionario registrado con exito", Toast.LENGTH_LONG).show();
             Intent imostrar= new Intent(Pregunta4.this, Especialidad_Academica.class);
             startActivity(imostrar);
