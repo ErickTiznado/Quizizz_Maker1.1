@@ -32,8 +32,8 @@ public class Pregunta3 extends AppCompatActivity {
         String respIncorrecta1_2 = datosRecibidos.getString("1cIncorrecto2");
         String respIncorrecta1_3 = datosRecibidos.getString("1cIncorrecto3");
 
-        String pregunta2 = datosRecibidos.getString("2cPregunta");
-        String respCorrect2 = datosRecibidos.getString("2cCorrecto");
+        String pregunta2_ = datosRecibidos.getString("2cPregunta");
+        String respCorrect2_1 = datosRecibidos.getString("2cCorrecto");
         String respIncorrecta2_1 = datosRecibidos.getString("2cIncorrecto1");
         String respIncorrecta2_2 = datosRecibidos.getString("2cIncorrecto2");
         String respIncorrecta2_3 = datosRecibidos.getString("2cIncorrecto3");
@@ -56,19 +56,19 @@ public class Pregunta3 extends AppCompatActivity {
                 pasarDatos.putString("1cCorrecto", respCorrect1_);
                 pasarDatos.putString("1cIncorrecto1", respIncorrecta1_1);
                 pasarDatos.putString("1cIncorrecto2", respIncorrecta1_2);
-                pasarDatos.putString("1cIncorrecto2", respIncorrecta1_3);
+                pasarDatos.putString("1cIncorrecto3", respIncorrecta1_3);
 
-                pasarDatos.putString("2cPregunta", pregunta2);
-                pasarDatos.putString("2cCorrecto", respCorrect2);
+                pasarDatos.putString("2cPregunta", pregunta2_);
+                pasarDatos.putString("2cCorrecto", respCorrect2_1);
                 pasarDatos.putString("2cIncorrecto1", respIncorrecta2_1);
                 pasarDatos.putString("2cIncorrecto2", respIncorrecta2_2);
-                pasarDatos.putString("2cIncorrecto2", respIncorrecta2_3);
+                pasarDatos.putString("2cIncorrecto3", respIncorrecta2_3);
 
                 pasarDatos.putString("3cPregunta", Preg);
                 pasarDatos.putString("3cCorrecto", RespCorr);
                 pasarDatos.putString("3cIncorrecto1", RespInc1);
                 pasarDatos.putString("3cIncorrecto2", RespInc2);
-                pasarDatos.putString("3cIncorrecto2", RespInc3);
+                pasarDatos.putString("3cIncorrecto3", RespInc3);
                 Intent siga = new Intent(Pregunta3.this, Pregunta4.class);
 
                 siga.putExtras(pasarDatos);
